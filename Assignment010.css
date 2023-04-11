@@ -17,20 +17,7 @@ body{
 }
 .title{ /* each cell of a single row */
     text-align: center;
-}
-.title:nth-child(4){ /* 4th no of cell */
-    width: 50%;
-    padding: 0px 5%;
-    margin: 0px -5%;
-}
-.title:nth-child(3){ /* 3rd no of cell */
-    width: 30%;
-}
-.title:nth-child(2){ /* 2nd no of cell */
-    width: 10%;
-}
-.title:nth-child(1){ /* 1st no of cell */
-    width: 10%;
+    padding: 0px 40px;
 }
 .header{/* for each cell of header row */
     text-transform: uppercase;
