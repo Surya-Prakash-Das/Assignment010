@@ -2,38 +2,38 @@
     font-family: "Raleway";
     src: url("Raleway-Regular.ttf");
 }
+:root{
+    --backColor:rgb(227 227 227);
+    --header-color:#7fff00;
+}
 body{
     font-family: "Raleway";
+    background-color: var(--backColor);
 }
-thead{
-    display: flex;
-    flex-direction: column;
-}
-.each-row{
+.each-row{/* for every row expect the header row */
     line-height: 30px;
     margin: 5px 0px;
+    background-color: white;
 }
-.title:nth-child(4){
+.title{ /* each cell of a single row */
+    text-align: center;
+}
+.title:nth-child(4){ /* 4th no of cell */
     width: 50%;
-    text-align: center;
+    padding: 0px 5%;
+    margin: 0px -5%;
 }
-.title:nth-child(3){
+.title:nth-child(3){ /* 3rd no of cell */
     width: 30%;
-    text-align: center;
 }
-.title:nth-child(2){
+.title:nth-child(2){ /* 2nd no of cell */
     width: 10%;
-    text-align: center;
 }
-.title:nth-child(1){
+.title:nth-child(1){ /* 1st no of cell */
     width: 10%;
-    text-align: center;
 }
-.header{
+.header{/* for each cell of header row */
     text-transform: uppercase;
     line-height: 40px;
-}
-tr:nth-child(1){
-    background-color: chartreuse;
-    display: flex;
+    background-color: var(--header-color);
 }
